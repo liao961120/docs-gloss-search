@@ -85,5 +85,12 @@
   <script src="//unpkg.com/prismjs/components/prism-python.min.js"></script>
   <script src="//unpkg.com/prismjs/components/prism-php.js"></script>
   <script src="//unpkg.com/prismjs/components/prism-vim.min.js"></script> -->
+
+  <!-- Progressive Web App Support -->
+  <script>
+    if (typeof navigator.serviceWorker !== 'undefined') {
+      navigator.serviceWorker.register('sw.js')
+    }
+  </script>
 </body>
 </html>
