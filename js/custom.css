@@ -14,3 +14,12 @@ img {
 	color: rgba(128, 128, 128, 0.715);
 	font-size: 0.75em;
 }
+
+summary {
+	font-size: 0.88em;
+	color: grey;
+}
+summary:hover {
+	cursor: pointer;
+	color: rgb(0, 214, 0);
+}

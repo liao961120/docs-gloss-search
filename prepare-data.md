@@ -2,7 +2,7 @@
 
 {docsify-updated}
 
-## 1.1 &nbsp; 內文格式
+## 1.1 &nbsp; 內文格式  :id=content-format
 
 [點此](/_media/elicitation-sample.docx ":ignore")下載老師提供的轉寫語料檔範例。  
 下方為 **1 個句子**的轉寫範例，支援的兩種格式：
@@ -21,6 +21,9 @@
     [空行]
     ```
 
+	<details>
+	<summary>(範例語料)</summary>
+
 	```
 	2.
 	si-pa-quwas=mu           i      yaya
@@ -33,7 +36,7 @@
 	```
 
 
-1. **一行**原始族語(未切分)；**三行** gloss lines (切分且對齊之*族語*、*英文*、*中文*)；**三行** free lines (中英翻譯及註釋)
+2. **一行**原始族語(未切分)；**三行** gloss lines (切分且對齊之*族語*、*英文*、*中文*)；**三行** free lines (中英翻譯及註釋)
 
     ```
     [編號].
@@ -49,6 +52,9 @@
     [空行]
     ```
 
+	<details>
+	<summary>(範例語料)</summary>
+
 	```
 	2.
 	sipaquwasmu i yaya
@@ -62,12 +68,22 @@
 	#n i 可以省略。
     ```
 
+	</details>
+
+
+
+!> `[編號].`：編號後的 **`.`** 是**必須**的，且 `[編號].` 需獨占一行  
+    使用 Word 編輯時，編號請**勿**使用**~~項目符號~~**
+
 
 ### 1.1.1 &nbsp; 音檔嵌入
 
 **Gloss Search** 具有**嵌入音檔**並從**指定時間播放**之功能。欲使用此功能，請先將音檔 (需小於 **100MB**) 上傳至自己的 Google Drive，並取得分享連結 (權限需設為*任何人皆可檢視*)，再於語料檔 free lines 的部份加入一行：
 
 - `#a [Google Drive 分享連結] [該句於錄音檔之開始時間 (hh:mm:ss)]` (見下方實例最後一行)
+
+	<details>
+	<summary>(範例語料)</summary>
 
 	```
 	19.
@@ -83,63 +99,80 @@
 	#a https://drive.google.com/file/d/19_Z0TAciVvfrJmHGE2gAErV_KhXJaQOq 00:35:57
 	```
 
+	</details>
+
 	此句語料在 **Gloss Search** 會被處理成下圖的樣子，其中音檔會直接從 `35分57秒` 開始播放：
 
 	![](./_media/UI-audio-gloss.png ':size=65%')
 
 
 
+
 ### 1.1.2 &nbsp; 注意
 
-1. `[編號].`：編號後的 **`.`** 是**必須**的，且 `[編號].` 需獨占一行
-1. 使用 Word 編輯時，編號請**勿**使用**~~項目符號~~**
-1. Gloss lines 的每個單位**皆**要有內容，若暫時不確定如何分析，請使用**底線** (`_`) 替代：
 
-	```
-	si-pa-quwas=mu     i     yaya
-	CF-VBL-song=_      NOM   mother
-	參焦-動化-歌=_      名詞   媽媽
-	```
-1. Gloss lines 中的**同一個切分單位**之內**不可以有空白**。若有多重意義，請使用 dot (`.`) 當作連接符號，例如下方的 `good.beautiful`, `好.漂亮`：
+!> Gloss lines 的每個單位**皆**要有內容，若暫時不確定如何分析，請使用**底線** (`_`) 替代：
 
-	```
-	mathariri       kay     akaneane
-	good.beautiful  this    food
-	好.漂亮          這      食物
-	```
+<details>
+<summary>(範例語料)</summary>
+```
+si-pa-quwas=mu     i     yaya
+CF-VBL-song=_      NOM   mother
+參焦-動化-歌=_      名詞   媽媽
+```
+</details>
 
 
-1. 若 gloss lines **一行寫不下**，請依循下方格式換行：
 
-	```
-	[族語分析]
-    [英文 Glossing]
-    [中文 Glossing]
-	[空行 (Optional)]
-	[族語分析 (接續，第二行)]
-    [英文 Glossing (接續，第二行)]
-    [中文 Glossing (接續，第二行)]
-	[空行 (Optional)]
-	[族語分析 (接續，第三行，如果還有)]
-    [英文 Glossing (接續，第三行，如果還有)]
-    [中文 Glossing (接續，第三行，如果還有)]
+!>  Gloss lines 中的**同一個切分單位**之內**不可以有空白**。若有多重意義，請使用 dot (`.`) 當作連接符號，例如下方的 `good.beautiful`, `好.漂亮`：
 
-	15.
-	kay lasitu nguavavaeva mucucubungu kilrumay ki sinsilini
+<details>
+<summary>(範例語料)</summary>
+```
+mathariri       kay     akaneane
+good.beautiful  this    food
+好.漂亮          這      食物
+```
+</details>
 
-	kay   la-situ       ngu-a-va-vaeva   mu-cucubungu  ki-lrumay
-	this  PL-student    ngu-RLS-RED-one  go-front      PASS-hit
-	這    複數-學生       ngu-實現-重疊-一  去-前面        被-打
 
-	ki   sinsi-lini
-	OBL  teacher-3PL.GEN
-	斜格  老師-他們的
+!> 若 gloss lines **一行寫不下**，請依循下方格式換行  
+   其它行，例如第一行未切分的**原始族語**與 **free lines** 請**勿換行**書寫。
 
-	#e The students went to the front one by one to be hit by their teacher.
-	#c 這些學生一個個到前面被他們的老師打
-	```
+<details>
+<summary>(範例語料)</summary>
 
-	其它行，例如第一行未切分的**原始族語**與 **free lines** 請**勿換行**書寫。
+```
+[族語分析]
+[英文 Glossing]
+[中文 Glossing]
+[空行 (Optional)]
+[族語分析 (接續，第二行)]
+[英文 Glossing (接續，第二行)]
+[中文 Glossing (接續，第二行)]
+[空行 (Optional)]
+[族語分析 (接續，第三行，如果還有)]
+[英文 Glossing (接續，第三行，如果還有)]
+[中文 Glossing (接續，第三行，如果還有)]
+
+15.
+kay lasitu nguavavaeva mucucubungu kilrumay ki sinsilini
+
+kay   la-situ       ngu-a-va-vaeva   mu-cucubungu  ki-lrumay
+this  PL-student    ngu-RLS-RED-one  go-front      PASS-hit
+這    複數-學生       ngu-實現-重疊-一  去-前面        被-打
+
+ki   sinsi-lini
+OBL  teacher-3PL.GEN
+斜格  老師-他們的
+
+#e The students went to the front one by one to be hit by their teacher.
+#c 這些學生一個個到前面被他們的老師打
+```
+
+</details>
+
+
 
 
 ## 1.2 &nbsp; 檔案格式
