@@ -11,6 +11,7 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <!-- Theme 主题设置 [vue.css] [buble.css] [dark.css] [pure.css] -->
   <link rel="stylesheet" href="js/vue.css">
+  <link rel="stylesheet" href="js/custom.css">
   <!-- Plugin gitalk -->
 </head>
 <body>
@@ -27,9 +28,9 @@
       // -->侧边栏 [_sidebar.md]
       loadSidebar:true,
       // 说实话，没搞懂
-      maxLevel:3,
+      //maxLevel: 6,
       // 设置侧边栏中，当前文章的最大目录层级；不设置，则不会显示当前文章目录
-      subMaxLevel: 2,
+      subMaxLevel: 3,
       // -->导航栏 [_navbar.md]
       loadNavbar: true,
       mergeNavbar: true,
@@ -45,12 +46,13 @@
       // 页面切换之后，自动跳转到顶部
       auto2top: true,
       // 格式化
-      formatUpdated: '{MM}/{DD} {HH}:{mm}',
+      formatUpdated: '<span class="last-updated">2020.{MM}.{DD}</span>',
 
       // ************************* Plugins *************************
       // https://docsify.js.org/#/zh-cn/plugins
       // 全文搜索 - Search
       search: 'auto',
+      ga: 'UA-170502084-1',
       plugins: [
         // Edit On Github
         function (hook, vm) {
@@ -63,6 +65,22 @@
               // + '<a href="https://docsify.js.org" target="_blank" style="color: inherit; font-weight: normal; text-decoration: none;">Powered by docsify</a>'
           })
         },
+
+        // Footer
+        function(hook) {
+          var footer = [
+            '<footer style="text-align: center">',
+            '<span>Gloss Search User Guide</span>',
+            '<span style="color:rgba(163, 163, 163, 0.7);margin: 0 0.5em;font-weight:bold;"> &#448; </span> ',
+            '<span>&copy; <a href="https://yongfu.name" target="_blank">Yongfu Liao</a> 2020 </span>',
+            
+            '</footer>'
+          ].join('');
+
+          hook.afterEach(function(html) {
+            return html + footer;
+          });
+        }
       ]
     }
   </script>
@@ -74,6 +92,7 @@
   <script src="js/zoom-image.js"></script>
   <!-- 点击代码块右上角复制代码 -->
   <script src="js/docsify-copy-code.min.js"></script>
+  <script src="js/ga.min.js"></script>
   <!-- Plugins：gitalk -->
   <!-- Plugins：代码高亮 prism -->
   <script src="js/prism/prism-bash.min.js"></script>

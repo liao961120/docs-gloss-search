@@ -1,0 +1,16 @@
+img {
+	box-shadow: 2.3px 2.3px 2.3px 1.3px rgba(27, 27, 27, 0.28);
+	border-radius: 4.5px;
+}
+.last-updated {
+	position: absolute;
+	right: 0;
+	top: 9.1em;
+	font-size: 0.8em;
+	color: rgb(112, 112, 112);
+}
+.last-updated::before {
+	content: "Updated: ";
+	color: rgba(128, 128, 128, 0.715);
+	font-size: 0.75em;
+}
