@@ -34,8 +34,12 @@
       // -->导航栏 [_navbar.md]
       loadNavbar: true,
       mergeNavbar: true,
+      disqus: 'docs-gloss-search',
       // -->404页面 「_404.md」
       //notFoundPage: true,
+      markdown: {
+        smartypants: true,
+      },
 
       name: '<span style="font-size:1.1em;color:#5c5c5c;letter-spacing:0.1em;">南島語料搜尋</span><br><span style="font-size:0.51em;color:grey;letter-spacing:0.5em">使用說明</span>',
       // 网址logo
@@ -93,13 +97,17 @@
   <!-- 点击代码块右上角复制代码 -->
   <script src="js/docsify-copy-code.min.js"></script>
   <script src="js/ga.min.js"></script>
+  <script src="js/disqus.min.js"></script>
   <!-- Plugins：gitalk -->
   <!-- Plugins：代码高亮 prism -->
+  
   <script src="js/prism/prism-bash.min.js"></script>
+  <script src="js/prism/prism-python.min.js"></script>
   <script src="js/prism/prism-powershell.min.js"></script>
   <script src="js/prism/prism-markdown.min.js"></script>
   <script src="js/prism/prism-json.min.js"></script>
-  <!-- <script src="//unpkg.com/prismjs/components/prism-kotlin.min.js"></script>
+  <script src="js/prism/prism-regex.min.js"></script>
+  <!-- 
   <script src="//unpkg.com/prismjs/components/prism-java.min.js"></script>
   <script src="//unpkg.com/prismjs/components/prism-python.min.js"></script>
   <script src="//unpkg.com/prismjs/components/prism-php.js"></script>

@@ -35,6 +35,8 @@
 	#n i 可以省略。
 	```
 
+	</details>
+
 
 2. **一行**原始族語(未切分)；**三行** gloss lines (切分且對齊之*族語*、*英文*、*中文*)；**三行** free lines (中英翻譯及註釋)
 
@@ -195,10 +197,10 @@ OBL  teacher-3PL.GEN
 欲將語料更新至 **Gloss Search**，需兩步驟 (即上圖的 `1. Upload` 與 `2. Request data update`)：
 
 1. 將語料檔 (`.docx`/`.txt`) 上傳至**指定的 Google Drive 資料夾** (請詢問老師)
-1. 至 [Gloss Search](https://glosss.yongfu.name) 左欄點選 **Data Update** 再輸入 **密碼** (請詢問老師)
+1. 至 [Gloss Search](https://glosss.yongfu.name) 左欄點選 **Data Update** 再輸入**密碼** (請詢問老師)
 
-	![](./_media/UI-data-update.gif ':size=85%')
+	![](./_media/UI-data-update.gif ':size=78%')
 
 	約等待 3-5 分鐘後，語料應已更新在 **Gloss Search**。此時可至左欄點選 **Format Check** 檢查自己的語料格式是否正確
 
-	![](./_media/UI-format-check.gif ':size=85%')
+	![](./_media/UI-format-check.gif ':size=78%')
