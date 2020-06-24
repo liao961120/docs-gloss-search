@@ -6,6 +6,11 @@
 This is the user guide for [南島語料搜尋 (Gloss Search)](https://glosss.yongfu.name), a web app for searching interlinear glosses written in Word (`.docx`) or plain text(`.txt`). [Gloss Search](https://glosss.yongfu.name) was created for [Graduate Institute of Linguistics](https://linguistics.ntu.edu.tw) at National Taiwan University to facilitate linguistic fieldwork and documentation of Formosan Languages. It was inspired by [puerdon/corpus_processor](https://github.com/puerdon/corpus_processor), which does roughly the same job as **Gloss Search**, but in a Jupyter Notebook environment.
 
 
+## Help {docsify-ignore}
+
+若發現文件有不清楚或錯誤的地方，歡迎於該頁最下方**留言**，或直接點選最上方的 ![Edit Document](https://github.githubassets.com/images/icons/emoji/memo.png ':class=emoji') 至 [GitHub](https://github.com) 編輯文件。另外，也歡迎任何有興趣的人一同撰寫此份說明文件。
+
+
 ## Features of Gloss Search {docsify-ignore}
 
 - Search glosses with [Regular Expressions](https://en.wikipedia.org/wiki/Regular_expression) or **exact match**
