@@ -8,7 +8,7 @@ This is the user guide for [南島語料搜尋 (Gloss Search)](https://glosss.yo
 
 ## Help {docsify-ignore}
 
-若發現文件有不清楚或錯誤的地方，歡迎於該頁最下方**留言**，或直接點選最上方的 ![Edit Document](https://github.githubassets.com/images/icons/emoji/memo.png ':class=emoji') 至 [GitHub](https://github.com) 編輯文件。另外，也歡迎任何有興趣的人一同撰寫此份說明文件。
+若發現文件有不清楚或錯誤的地方，歡迎於該頁最下方**留言**，或直接點選最上方的 ![Edit Document](https://github.githubassets.com/images/icons/emoji/memo.png ':class=emoji') 至 [GitHub](https://github.com) 編輯文件。另外，也歡迎任何有興趣的人一同撰寫此份說明文件 (e.g. 英文版)。
 
 
 ## Features of Gloss Search {docsify-ignore}
