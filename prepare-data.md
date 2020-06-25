@@ -117,11 +117,13 @@
 
 <details>
 <summary>(範例語料)</summary>
+
 ```
 si-pa-quwas=mu     i     yaya
 CF-VBL-song=_      NOM   mother
 參焦-動化-歌=_      名詞   媽媽
 ```
+
 </details>
 
 
@@ -130,11 +132,13 @@ CF-VBL-song=_      NOM   mother
 
 <details>
 <summary>(範例語料)</summary>
+
 ```
 mathariri       kay     akaneane
 good.beautiful  this    food
 好.漂亮          這      食物
 ```
+
 </details>
 
 
