@@ -42,13 +42,3 @@
 
 	- `Kui/20200318.docx`, `Kui/20200325.docx`, `Kui/20200508`, `Kui/20200515`, ...
 	</details>
-
-<!-- 
-2. Regular Expression
-	Match anything `.`
-	How to get all gloss in a particular file (. + Docx filter)
-	Character set `[]`
-		How to search in a specific time range
-	Groups `()` + OR `|`
-		How to search for diff. affixes on the same stem
- -->
