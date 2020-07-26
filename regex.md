@@ -29,13 +29,13 @@
 	- `(ma|ka)`: `ma` 或 `ka`
 	- `^(ma|ka)`: 以 `ma` 或 `ka` 開頭
 	</details>
-1. 限縮特定時間範圍。例如，只搜尋**三、五月**的語料，可在 docx filter 輸入：
+1. 限縮特定時間範圍。例如，只搜尋**三月和五月**的語料，可在 docx filter 輸入：
 
 	<details>
 	<summary>(RegEx)</summary>
 
 	```regex
-	Kui/20200[356]
+	Kui/20200[35]
 	```
 
 	如此，就會搜尋以 `Kui/202003`, `Kui/202005` 開頭的文件路徑，例如：
