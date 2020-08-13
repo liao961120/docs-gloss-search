@@ -61,7 +61,7 @@
         // Edit On Github
         function (hook, vm) {
           hook.beforeEach(function (html) {
-            var url = 'https://github.com/liao961120/docs-gloss-search/blob/master/' + vm.route.file
+            var url = 'https://github.com/liao961120/docs-gloss-search/edit/master/' + vm.route.file
             var editHtml = '[:memo: Edit Document](' + url + ')\n\n'
             return editHtml
               + html
