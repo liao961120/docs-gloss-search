@@ -14,10 +14,10 @@ This is the user guide for [南島語料搜尋 (Gloss Search)](https://glosss.yo
 ## Features of Gloss Search {docsify-ignore}
 
 - Search glosses with [Regular Expressions](https://en.wikipedia.org/wiki/Regular_expression) or **exact match**
-- Restrict search space to specific **files** or **date**
+- Restrict search space to specific **files** or **dates**
 - Link **audio file** to a gloss
 - **Copy-paste** plain-text gloss
-- **Lexicon** generated from gloss lines *(good for inspecting transcription variations)*
+- **Lexicon** generated from gloss lines *(could be used for inspecting transcription variations)*
 
   
 
