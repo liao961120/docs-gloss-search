@@ -194,7 +194,7 @@ OBL  teacher-3PL.GEN
 
 ## 1.3 &nbsp; 更新至 Gloss Search
 
-**Gloss Search** 使用 Google Drive, Travis CI 與 GitHub 來達成線上更新的功能，其運作邏輯如下圖 (不知道這是什麼沒關係)：
+**Gloss Search** 使用 Google Drive 與 GitHub Action 來達成線上更新的功能，其運作邏輯如下圖 (不知道這是什麼沒關係)：
 
 ![](https://img.yongfu.name/posts/gloss-search-webbased.png ':size=68%')
 
